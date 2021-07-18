@@ -14402,6 +14402,16 @@
   "RootNamespace": "ServerTemperatureSystem",
   "Documents": [
     {
+      "FilePath": "/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/Views/Shared/_MainLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_MainLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/Views/Monitor/MainPage.cshtml",
       "TargetPath": "Views\\Monitor\\MainPage.cshtml",
       "FileKind": "mvc"

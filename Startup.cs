@@ -29,6 +29,7 @@ namespace ServerTemperatureSystem
             }
 
             app.UseRouting();
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
             {

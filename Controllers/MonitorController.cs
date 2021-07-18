@@ -22,7 +22,7 @@ namespace ServerTemperatureSystem.Controllers
             Components results = temps.GetSystemTemps();
             usage.SetUsage(ref results);
 
-            return View();
+            return View(results);
         }
     }
 }

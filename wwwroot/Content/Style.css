@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(50, 50, 50);
+}
+.Container{
+    height: calc(100% - 190px);
+    width: calc(100% - 80px);
+    position: relative;
+    padding: 40px;
+    padding-bottom: 150px;
+}
+.dashboard{
+    background-color: rgba(50,50,50);
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.small-section{
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 16.5%;
+}
+.big-section{
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 33.5%;
+}
+.short-element{
+    position: relative;
+    height: calc(35% - 10px);
+    width: calc(100% - 10px);
+    margin: 5px;
+    margin-bottom: 10px;
+}
+.container-header{
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.short-half-left{
+    position: relative;
+    width: calc(50% - 5px);
+    float: left;
+    height: calc(100% - 10px);
+    margin-right: 5px;
+    background-color: rgba(25,25,25,1);
+    padding-top: 10px;
+}
+.short-half-right{
+    position: relative;
+    width: calc(50% - 5px);
+    float: left;
+    height: calc(100% - 10px);
+    margin-left: 5px;
+    background-color: rgba(25,25,25,1);
+    padding-top: 10px;
+}
+.short-element-content{
+    position: relative;
+    background-color: rgba(25,25,25,1);
+    width: 100%;
+    height: calc(100% - 10px);
+    padding-top: 10px;
+}
+.long-element{
+    position: relative;
+    height: calc(65% - 20px);
+    width: calc(100% - 10px);
+    background-color: rgba(25,25,25,1);
+    margin: 5px;
+    padding-top: 10px;
+}

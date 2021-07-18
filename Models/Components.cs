@@ -9,7 +9,7 @@ namespace ServerTemperatureSystem.Models
     {
         public CPU CPU { get; set; }
         public Motherboard MB { get; set; }
-        public Ram Ram { get; set; }
+        public Memory Memory { get; set; }
     }
     public abstract class TempParameters
     {
@@ -18,20 +18,15 @@ namespace ServerTemperatureSystem.Models
         public double MaxTemp { get; set; }
         public double MinTemp { get; set; }
     }
-    public abstract class UsageParameters
-    {
-        public int Usage { get; set; }
-        public int Total { get; set; }
-        public int Free { get; set; }
-        public int Used { get; set; }
-    }
     public class CPU : TempParameters
     {
-        public double Usage { get; set; }
+        public string Name { get; set; }
+        public float Usage { get; set; }
         public List<Core> Cores { get; set; }
     }
     public class Core : TempParameters
     {
+        public float Usage { get; set; }
         public string CoreName { get; set; }
     }
     public class CPUParams
@@ -62,7 +57,15 @@ namespace ServerTemperatureSystem.Models
         public long Guest { get; set; }
         public long Guest_nice { get; set; }
     }
-    public class Motherboard : TempParameters { }
+    public class Memory
+    {
+        public int Usage { get; set; }
+        public int Total { get; set; }
+        public int Used { get; set; }
+        public int Free { get; set; }
+        public int Shared { get; set; }
+        public int BufforCache { get; set; }
 
-    public class Ram : UsageParameters { }
+    }
+    public class Motherboard : TempParameters { }
 }

@@ -67,7 +67,7 @@ namespace ServerTemperatureSystem.Services
                             CriticalTemp = float.Parse(currentLine.Last().ToString()),
                             Temp = temp,
                             MaxTemp = temp,
-                            MinTemp = temp
+                            MinTemp = temp,
                         });
                     }
                     else if (c.ToLower().Contains("package"))
