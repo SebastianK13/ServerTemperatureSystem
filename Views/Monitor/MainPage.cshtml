@@ -2,73 +2,90 @@
 @{
     Layout = "_MainLayout";
 }
+
 <body>
     <div class="dashboard">
         <div class="small-section">
             <div class="short-element">
                 <div id="generalState" class="short-element-content">
                     <p class="container-header">General state</p>
-                    <p id="gsContent"></p>
+                    <div class="info-container">
+                        <p id="gsContent" class="container-content"></p>
+                    </div>
                 </div>
             </div>
             <div id="cpuCurrentUsage" class="long-element">
-                    <p class="container-header">CPU current usage</p>
-                    <div id="ccuUsage" class="bottom-container">
-
+                <p class="container-header">CPU current usage</p>
+                <div class="bottom-container">
+                    <div class="chart-container">
+                        <canvas id="ccuUsage" class="chart-centering"></canvas>
+                        <div id="cpuUsageLblId" class="cpu-usage-label"></div>
                     </div>
+                </div>
             </div>
         </div>
         <div class="big-section">
             <div class="short-element">
                 <div id="coreCritTemp" class="short-half-left">
                     <p class="container-header">Cores critical temperature</p>
-                    <p id="cstContent"></p>
+                    <div class="info-container">
+                        <p id="cstContent" class="container-content"></p>
+                    </div>
                 </div>
                 <div id="coresAmount" class="short-half-right">
                     <p class="container-header">Cores amount</p>
-                    <p id="caContent"></p>
+                    <div class="info-container">
+                        <p id="caContent" class="container-content"></p>
+                    </div>
                 </div>
             </div>
             <div id="cpuUsage" class="long-element">
-                    <p class="container-header">CPU & cores usage</p>
-                    <div id="cuUsage" class="bottom-container">
+                <p class="container-header">CPU & cores usage</p>
+                <div id="cuUsage" class="bottom-container">
 
-                    </div>
+                </div>
             </div>
         </div>
         <div class="big-section">
             <div class="short-element">
                 <div id="mbCritTemp" class="short-half-left">
-                    <p class="container-header">Motherboard critical temperature</p>
-                    <p id="mctContent"></p>
+                    <p class="container-header">Mobo critical temperature</p>
+                    <div class="info-container">
+                        <p id="mctContent" class="container-content"></p>
+                    </div>
                 </div>
                 <div id="cpuCritTemp" class="short-half-right">
                     <p class="container-header">CPU critical temperature</p>
-                    <p id="cctContent"></p>
+                    <div class="info-container">
+                        <p id="cctContent" class="container-content"></p>
+                    </div>
                 </div>
             </div>
             <div id="mbCPUTemp" class="long-element">
-                    <p class="container-header">Motherboard & CPU temperature</p>
-                    <div id="mbcTemp" class="bottom-container">
+                <p class="container-header">Motherboard & CPU temperature</p>
+                <div id="mbcTemp" class="bottom-container">
 
-                    </div>
+                </div>
             </div>
         </div>
         <div class="small-section">
             <div class="short-element">
                 <div id="memTotal" class="short-element-content">
                     <p class="container-header">Memory total</p>
-                    <p id="memtContent"></p>
+                    <div class="info-container">
+                        <p id="memtContent" class="container-content"></p>
+                    </div>
                 </div>
             </div>
             <div id="memoryUsage" class="long-element">
-                    <p class="container-header">Memory usage</p>
-                    <div id="memUsage" class="bottom-container">
+                <p class="container-header">Memory usage</p>
+                <div id="memUsage" class="bottom-container">
 
-                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script type="text/javascript">var viewmodel = @Json.Serialize(Model)</script>
     <script type="text/javascript" src="./Scripts/JavaScript.js"></script>
+    <script type="text/javascript" src="./Scripts/ChartsScript.js"></script>
 </body>

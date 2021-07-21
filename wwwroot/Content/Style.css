@@ -40,8 +40,14 @@ body{
 .container-header{
     margin: 0;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
+    height: 50px;
+}
+.bottom-container{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 50px);
 }
 .short-half-left{
     position: relative;
@@ -75,4 +81,56 @@ body{
     background-color: rgba(25,25,25,1);
     margin: 5px;
     padding-top: 10px;
+}
+.container-content{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin:0;
+    color: rgba(30, 130, 76, 1);
+}
+#gsContent{
+    text-align: center;
+    font-size: 35px;
+}
+#cstContent{
+    text-align: center;
+    font-size: 35px;
+}
+#caContent{
+    text-align: center;
+    font-size: 35px;
+}
+#mctContent{
+    text-align: center;
+    font-size: 35px;
+}
+#cctContent{
+    text-align: center;
+    font-size: 35px;
+}
+#memtContent{
+    text-align: center;
+    font-size: 35px;
+}
+.info-container{
+    position: relative;
+    height: calc(100% - 50px);
+    border-top: 1px solid rgba(191, 191, 191, .5);
+}
+.cpu-usage-label{
+    position: relative;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+.bottom-container{
+    border-top: 1px solid rgba(191, 191, 191, .5);
+}
+.chart-container{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    transform: translateY(-40%);
 }
