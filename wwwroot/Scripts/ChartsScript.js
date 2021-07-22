@@ -1,61 +1,97 @@
 const cpuUsage = document.getElementById("ccuUsage");
-const ctx = cpuUsage.getContext('2d');
+const cpuCtx = cpuUsage.getContext('2d');
 const threePIByTwo = (Math.PI);
 const activeColor = '#FDAC42',
     inactiveColor = '#282A2D';
-var chartX = 0;
-var chartY = 0;
-var result = 0;
+const memUsage = document.getElementById("memoryUsageChart");
+const memCtx = memUsage.getContext('2d');
+var cpuX = 0;
+var cpuY = 0;
+var memX = 0;
+var memY = 0;
+var cpuResult = 0;
+var memResult = 0;
 var cpuUsageLabel = document.getElementById("cpuUsageLblId");
+var memUsageLabel = document.getElementById("memoryUsageLblId");
+var loops = 0;
 
 initialize();
 
-function setUsageValue(x) {
-    result = (180 * x) / 100;
+function setUsageValue(c, m) {
+    cpuResult = (180 * c) / 100;
+    memResult = (180 * m) / 100;
 }
 
 function initialize() {
-    setUsageValue(82);
+    setUsageValue(viewmodel.cpu.usage, viewmodel.memory.usage);
+    memUsage.height = 140;
     cpuUsage.height = 140;
-    chartX = cpuUsage.width / 2;
-    chartY = 130;
+    cpuX = cpuUsage.width / 2;
+    cpuY = 130;
+    memX = memUsage.width / 2;
+    memY = 130;
     animateOnInit();
     currentDistance = 0;
-    cpuUsageLabel.innerHTML = viewmodel.cpu.usage+"%";
+    cpuUsageLabel.innerHTML = viewmodel.cpu.usage + "%";
+    memUsageLabel.innerHTML = viewmodel.memory.usage + "%";
 }
 
-function animateOnInit(){
-    cycles = Math.ceil((18*result) / 180);
-    drawCircle(chartX, chartY, 100, Math.PI, 2 * Math.PI, false, inactiveColor, 25);
+function animateOnInit() {
+    debugger;
+    if (cpuResult > memResult)
+        loops = cpuResult;
+    else
+        loops = memResult;
 
-    for(i=0;i<=result;i++)
-    {
+    drawCPUCircle(cpuX, cpuY, 100, Math.PI, 2 * Math.PI, false, inactiveColor, 25);
+    drawMemCircle(memX, memY, 100, Math.PI, 2 * Math.PI, false, inactiveColor, 25);
+
+    for (i = 0; i <= loops; i++) {
         setDelay(i);
     }
     finished = true;
 }
 function setDelay(i) {
-    setTimeout(function(){
+    setTimeout(function () {
         distance = i;
-        drawBar(distance);
-    }, 5 * i);
+        if (cpuResult >= distance)
+            drawCPUBar(distance);
+
+        if (memResult >= distance)
+            drawMemBar(distance);
+    }, 15 * i);
 }
-function drawBar(distance){
-    drawCircle(chartX, chartY, 100, Math.PI, setRadians(distance) + Math.PI, false, activeColor, 25);
+function drawCPUBar(distance) {
+    drawCPUCircle(cpuX, cpuY, 100, Math.PI, setRadians(distance) + Math.PI, false, activeColor, 25);
+}
+
+function drawMemBar(distance) {
+    drawMemCircle(memX, memY, 100, Math.PI, setRadians(distance) + Math.PI, false, activeColor, 25);
 }
 
 function setRadians(deg) {
     return (Math.PI / 180) * deg;
 }
 
-function drawArc(x, y, radius, start, end, clockwise) {
-    ctx.beginPath();
-    ctx.arc(x, y, radius, start, end, clockwise);
+function drawArcCPU(x, y, radius, start, end, clockwise) {
+    cpuCtx.beginPath();
+    cpuCtx.arc(x, y, radius, start, end, clockwise);
 }
 
-function drawCircle(x, y, radius, start, end, clockwise, color, thickness) {
-    ctx.strokeStyle = color;
-    ctx.lineWidth = thickness;
-    drawArc(x, y, radius, start, end, clockwise)
-    ctx.stroke();
+function drawArcMemory(x, y, radius, start, end, clockwise) {
+    memCtx.beginPath();
+    memCtx.arc(x, y, radius, start, end, clockwise);
+}
+
+function drawCPUCircle(x, y, radius, start, end, clockwise, color, thickness) {
+    cpuCtx.strokeStyle = color;
+    cpuCtx.lineWidth = thickness;
+    drawArcCPU(x, y, radius, start, end, clockwise)
+    cpuCtx.stroke();
+}
+function drawMemCircle(x, y, radius, start, end, clockwise, color, thickness) {
+    memCtx.strokeStyle = color;
+    memCtx.lineWidth = thickness;
+    drawArcMemory(x, y, radius, start, end, clockwise)
+    memCtx.stroke();
 }

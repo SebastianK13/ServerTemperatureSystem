@@ -7,7 +7,6 @@ var moboCriticalTemp = document.getElementById("mctContent");
 var cpuCriticalTemp = document.getElementById("cctContent");
 var moboCPUTemp = document.getElementById("mbcTemp");
 var memTotal = document.getElementById("memtContent");
-var memUsage = document.getElementById("memUsage");
 
 window.addEventListener("DOMContentLoaded", function(){
     generalState.innerHTML = "Normal";
