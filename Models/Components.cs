@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using ServerTemperatureSystem.Services;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ServerTemperatureSystem.Models
 {
@@ -68,4 +70,23 @@ namespace ServerTemperatureSystem.Models
 
     }
     public class Motherboard : TempParameters { }
+
+    public class ComponentReadings
+    {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
+        public int Id { get; set; }
+        //public Component Details { get; set; }
+        public int Usage { get; set; }
+        public float Temperature { get; set; }
+        public DateTime Date { get; set; }
+    }
+    public class Component
+    {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
+        public int Id { get; set; }
+        public String Name { get; set; }
+        public virtual IList<ComponentReadings> Readings { get; set; }
+    }
 }

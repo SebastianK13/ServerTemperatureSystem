@@ -1,124 +1,3 @@
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/appsettings.Development.json
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/appsettings.json
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ServerTemperatureSystem.exe
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ServerTemperatureSystem.deps.json
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ServerTemperatureSystem.runtimeconfig.json
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ServerTemperatureSystem.runtimeconfig.dev.json
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ServerTemperatureSystem.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ServerTemperatureSystem.pdb
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.csprojAssemblyReference.cache
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.AssemblyInfoInputs.cache
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.AssemblyInfo.cs
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.RazorTargetAssemblyInfo.cache
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/staticwebassets/ServerTemperatureSystem.StaticWebAssets.Manifest.cache
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/staticwebassets/ServerTemperatureSystem.StaticWebAssets.xml
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.pdb
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.genruntimeconfig.cache
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.csproj.CopyComplete
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.Language.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Razor.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Workspaces.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/dotnet-aspnet-codegenerator-design.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Composition.AttributedModel.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Composition.Convention.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Composition.Hosting.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Composition.Runtime.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Composition.TypedParts.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.MvcApplicationPartsAssemblyInfo.cache
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ServerTemperatureSystem.Views.dll
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ServerTemperatureSystem.Views.pdb
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.RazorAssemblyInfo.cache
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.RazorAssemblyInfo.cs
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.TagHelpers.input.cache
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.TagHelpers.output.cache
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.RazorCoreGenerate.cache
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/Razor/Views/MainPage.cshtml.g.cs
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.RazorTargetAssemblyInfo.cs
-X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.Views.pdb
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/appsettings.json
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
@@ -130,6 +9,12 @@ X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperature
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ServerTemperatureSystem.pdb
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ServerTemperatureSystem.Views.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ServerTemperatureSystem.Views.pdb
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/BouncyCastle.Crypto.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Google.Protobuf.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Humanizer.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/K4os.Compression.LZ4.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/K4os.Compression.LZ4.Streams.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/K4os.Hash.xxHash.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.Language.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll
@@ -142,6 +27,15 @@ X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperature
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
@@ -151,16 +45,30 @@ X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperature
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/MySql.Data.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Ubiety.Dns.Core.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Zstandard.Net.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/MySql.Data.EntityFrameworkCore.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/MySqlConnector.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Renci.SshNet.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/SshNet.Security.Cryptography.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Composition.AttributedModel.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Composition.Convention.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Composition.Hosting.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Composition.Runtime.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Composition.TypedParts.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Security.AccessControl.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Security.Principal.Windows.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Xml.XPath.XmlDocument.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.resources.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.resources.dll
@@ -220,7 +128,10 @@ X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperature
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.csprojAssemblyReference.cache
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.AssemblyInfoInputs.cache
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.AssemblyInfo.cs
@@ -231,6 +142,9 @@ X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperature
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.TagHelpers.input.cache
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.TagHelpers.output.cache
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.RazorCoreGenerate.cache
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/Razor/Views/Monitor/MainPage.cshtml.g.cs
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_MainLayout.cshtml.g.cs
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.RazorTargetAssemblyInfo.cache
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.RazorTargetAssemblyInfo.cs
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.Views.pdb
@@ -240,6 +154,3 @@ X:/Programowanie/C#/Aplikacje internetowe/asp.net mvc core 3.1/ServerTemperature
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.pdb
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.genruntimeconfig.cache
-/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/Razor/Views/Monitor/MainPage.cshtml.g.cs
-/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_MainLayout.cshtml.g.cs
-/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs

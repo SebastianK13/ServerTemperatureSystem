@@ -17,6 +17,8 @@ body{
     height: 100%;
     width: 100%;
     position: relative;
+    min-width: 1840px;
+min-height: 755px;
 }
 .small-section{
     position: relative;
@@ -112,6 +114,16 @@ body{
 #memtContent{
     text-align: center;
     font-size: 35px;
+}
+#cuUsage{
+    max-height: 55%;
+    border-bottom: 1px solid rgba(191, 191, 191, .5);
+}
+#coresCpuChartU{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 15px);
 }
 .info-container{
     position: relative;
