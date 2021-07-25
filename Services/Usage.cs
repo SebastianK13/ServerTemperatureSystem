@@ -72,13 +72,13 @@ namespace ServerTemperatureSystem.Services
         {
             for (int i = 0; i <= components.CPU.Cores.Count; i++)
             {
-                if (i == 0)
+/*                 if (i == 0)
                     components.CPU.Usage = 100 * (cpuActiveCurr[i] - cpuActivePrevs[i]) / (cpuTotalCurr[i] - cpuTotalPrevs[i]);
                 else
                 {
                     components.CPU.Cores[i - 1].Usage = 100 * (cpuActiveCurr[i] - cpuActivePrevs[i]) / (cpuTotalCurr[i] - cpuTotalPrevs[i]);
                     components.CPU.Cores[i - 1].CoreName = "Core" + (i - 1).ToString();
-                }
+                } */
             }
         }
         private void SetMemoryUsage(Components c)
@@ -99,7 +99,7 @@ namespace ServerTemperatureSystem.Services
             }
 
             c.Memory = SetMemoryParams(memoryDetails);
-            c.Memory.Usage = 100*(c.Memory.Total - c.Memory.Free)/c.Memory.Total;           
+            //c.Memory.Usage = 100*(c.Memory.Total - c.Memory.Free)/c.Memory.Total;        
         }
         private Memory SetMemoryParams(string memDetails)
         {
@@ -110,10 +110,11 @@ namespace ServerTemperatureSystem.Services
             return new Memory
             {
                 Total = int.Parse(temp[0].Value),
-                Used = int.Parse(temp[1].Value),
+                Name = "Memory"
+/*                 Used = int.Parse(temp[1].Value),
                 Free = int.Parse(temp[2].Value),
                 Shared = int.Parse(temp[3].Value),
-                BufforCache = int.Parse(temp[4].Value)
+                BufforCache = int.Parse(temp[4].Value) */
             };
         }
     }

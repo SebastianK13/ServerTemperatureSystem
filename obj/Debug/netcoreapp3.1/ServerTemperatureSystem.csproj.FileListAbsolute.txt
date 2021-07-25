@@ -10,6 +10,7 @@
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ServerTemperatureSystem.Views.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/ServerTemperatureSystem.Views.pdb
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/BouncyCastle.Crypto.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Castle.Core.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Google.Protobuf.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Humanizer.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/K4os.Compression.LZ4.dll
@@ -25,6 +26,7 @@
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Proxies.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll

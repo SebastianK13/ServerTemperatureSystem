@@ -43,18 +43,17 @@ namespace ServerTemperatureSystem.Services
                             mb.CriticalTemp = float.Parse(currentLine.Last().ToString());
 
                         numberOfSensors++;
-                        mb.Temp += float.Parse(currentLine.First().ToString());
+/*                         mb.Temp += float.Parse(currentLine.First().ToString()); */
                     }
                 }
-            mb.Temp = Math.Round(mb.Temp / numberOfSensors, 1);
-            mb.MaxTemp = mb.Temp;
-            mb.MinTemp = mb.Temp;
+            //mb.Temp = Math.Round(mb.Temp / numberOfSensors, 1);
             return mb;
         }
         private CPU FindCPUDetails(List<string> tempDetails)
         {
             CPU cpu = new CPU();
             List<Core> cores = new List<Core>();
+            int coreNum = 0;
             foreach (string c in tempDetails)
             {
                 var currentLine = FindMatches(c);
@@ -65,17 +64,16 @@ namespace ServerTemperatureSystem.Services
                         float temp = float.Parse(currentLine.First().ToString());
                         cores.Add(new Core{
                             CriticalTemp = float.Parse(currentLine.Last().ToString()),
-                            Temp = temp,
-                            MaxTemp = temp,
-                            MinTemp = temp,
+                            //Temp = temp,
+                            Name = "Core"+coreNum
                         });
+                        coreNum++;
                     }
                     else if (c.ToLower().Contains("package"))
                     {
                         cpu.CriticalTemp = float.Parse(currentLine.Last().ToString());
-                        cpu.Temp = float.Parse(currentLine.First().ToString());
-                        cpu.MaxTemp = cpu.Temp;
-                        cpu.MinTemp = cpu.Temp;
+                        cpu.Name = "CPU";
+                        //cpu.Temp = float.Parse(currentLine.First().ToString());
                     }
                 }
             }

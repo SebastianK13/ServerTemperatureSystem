@@ -13,23 +13,68 @@ namespace ServerTemperatureSystem.Models
         public Motherboard MB { get; set; }
         public Memory Memory { get; set; }
     }
-    public abstract class TempParameters
+    public class UsageDetails
     {
-        public double Temp { get; set; }
-        public double CriticalTemp { get; set; }
-        public double MaxTemp { get; set; }
-        public double MinTemp { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
+        public int Id { get; set; }
+        public int Usage { get; set; }
+        public DateTime Date { get; set; }
+        public virtual CPU CPU { get; set; }
+        public virtual Core Core { get; set; }
+        public virtual Memory Memory { get; set; }
     }
-    public class CPU : TempParameters
+    public class TemperatureDetails
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
+        public int Id { get; set; }
+        public double Temperature { get; set; }
+        public DateTime Date { get; set; }
+        public virtual CPU CPU { get; set; }
+        public virtual Core Core { get; set; }
+        public virtual Motherboard Mobo { get; set; }
+    }
+    public class Core
+    {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
+        public int Id { get; set; }
         public string Name { get; set; }
-        public float Usage { get; set; }
-        public List<Core> Cores { get; set; }
+        public double CriticalTemp { get; set; }
+        public virtual ICollection<UsageDetails> UsageReadings { get; set; }
+        public virtual ICollection<TemperatureDetails> TemperatureReadings { get; set; }
+        public virtual CPU CPU { get; set; }
     }
-    public class Core : TempParameters
+    public class CPU
     {
-        public float Usage { get; set; }
-        public string CoreName { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public double CriticalTemp { get; set; }
+        public virtual ICollection<UsageDetails> UsageReadings { get; set; }
+        public virtual ICollection<TemperatureDetails> TemperatureReadings { get; set; }
+        public virtual ICollection<Core> Cores { get; set; }
+    }
+    public class Memory
+    {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Total { get; set; }
+        public virtual ICollection<UsageDetails> UsageReadings { get; set; }
+
+    }
+    public class Motherboard
+    {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public double CriticalTemp { get; set; }
+        public virtual ICollection<TemperatureDetails> TemperatureReadings { get; set; }
     }
     public class CPUParams
     {
@@ -59,34 +104,52 @@ namespace ServerTemperatureSystem.Models
         public long Guest { get; set; }
         public long Guest_nice { get; set; }
     }
-    public class Memory
+    /*     public abstract class TempParameters
     {
-        public int Usage { get; set; }
-        public int Total { get; set; }
-        public int Used { get; set; }
-        public int Free { get; set; }
-        public int Shared { get; set; }
-        public int BufforCache { get; set; }
+        public double Temp { get; set; }
+        public double CriticalTemp { get; set; }
+        public double MaxTemp { get; set; }
+        public double MinTemp { get; set; }
+    } */
 
-    }
-    public class Motherboard : TempParameters { }
-
-    public class ComponentReadings
-    {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Key]
-        public int Id { get; set; }
-        //public Component Details { get; set; }
-        public int Usage { get; set; }
-        public float Temperature { get; set; }
-        public DateTime Date { get; set; }
-    }
-    public class Component
-    {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Key]
-        public int Id { get; set; }
-        public String Name { get; set; }
-        public virtual IList<ComponentReadings> Readings { get; set; }
-    }
+    /*     public class ComponentReadings
+        {
+            [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+            [Key]
+            public int Id { get; set; }
+            public virtual Component Details { get; set; }
+            public int Usage { get; set; }
+            public float Temperature { get; set; }
+            public DateTime Date { get; set; }
+        } */
+    /*     public class Component
+        {
+            [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+            [Key]
+            public int Id { get; set; }
+            public String Name { get; set; }
+            public virtual ICollection<ComponentReadings> Readings { get; set; }
+            public virtual AdditionalInfofrmations AdditionalInfo { get; set; }
+        }
+        public class AdditionalInfofrmations
+        {
+            [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+            [Key]
+            public int Id { get; set; }
+            public double CriticalTemp { get; set; }
+            public int Total { get; set; }
+            public int Used { get; set; }
+            public int Free { get; set; }
+            public int Shared { get; set; }
+            public int BufforCache { get; set; }
+        }
+        public class Core
+        {
+            [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+            [Key]
+            public int Id { get; set; }
+            public String Name { get; set; }
+            public virtual ICollection<ComponentReadings> Readings { get; set; }
+            public virtual AdditionalInfofrmations AdditionalInfo { get; set; }
+        } */
 }

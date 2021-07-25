@@ -28,7 +28,9 @@ namespace ServerTemperatureSystem
             services.AddDbContext<AppParamsDbContext>(options => 
             {
                 options.UseMySql(Configuration["Data:Readings:ConnectionString"], serverVersion);
+                options.UseLazyLoadingProxies(true);
             });
+            services.AddTransient<IReadingsService, ReadingsDataService>();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
