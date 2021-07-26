@@ -12,11 +12,12 @@ namespace ServerTemperatureSystem.Services
     public class Usage
     {
         public float CPUUsage { get; set; }
-        private List<long> cpuActivePrevs = new List<long>();
-        private List<long> cpuTotalPrevs = new List<long>();
-        private List<long> cpuActiveCurr = new List<long>();
-        private List<long> cpuTotalCurr = new List<long>();
+        private List<int> cpuActivePrevs = new List<int>();
+        private List<int> cpuTotalPrevs = new List<int>();
+        private List<int> cpuActiveCurr = new List<int>();
+        private List<int> cpuTotalCurr = new List<int>();
         private List<CPUParams> CpuParamsTemp = new List<CPUParams>();
+        private int freeMemory = 0;
         public void SetUsage(ref Components components)
         {
             CountCPUFirstProbe();
@@ -70,18 +71,35 @@ namespace ServerTemperatureSystem.Services
         }
         private void CountCPUUsage(Components components)
         {
-            for (int i = 0; i <= components.CPU.Cores.Count; i++)
+            int i = 0;
+            components.CPU.UsageReadings = new List<UsageDetails>{
+                        new UsageDetails{
+                            Usage = 100 * (cpuActiveCurr[0] - cpuActivePrevs[0]) / (cpuTotalCurr[0] - cpuTotalPrevs[0])
+                        }
+                    };
+
+            foreach (var item in components.CPU.Cores)
             {
-/*                 if (i == 0)
-                    components.CPU.Usage = 100 * (cpuActiveCurr[i] - cpuActivePrevs[i]) / (cpuTotalCurr[i] - cpuTotalPrevs[i]);
-                else
-                {
-                    components.CPU.Cores[i - 1].Usage = 100 * (cpuActiveCurr[i] - cpuActivePrevs[i]) / (cpuTotalCurr[i] - cpuTotalPrevs[i]);
-                    components.CPU.Cores[i - 1].CoreName = "Core" + (i - 1).ToString();
-                } */
+                item.UsageReadings = new List<UsageDetails>{
+                        new UsageDetails{
+                            Usage = 100 * (cpuActiveCurr[i] - cpuActivePrevs[i]) / (cpuTotalCurr[i] - cpuTotalPrevs[i]),
+                            Date = DateTime.Now
+                        }
+                    };
+                i++;
             }
         }
         private void SetMemoryUsage(Components c)
+        {
+            c.Memory  = SetMemoryParams();           
+            c.Memory.UsageReadings = new List<UsageDetails>{
+                new UsageDetails{
+                    Usage = 100*(c.Memory.Total - freeMemory)/c.Memory.Total,
+                    Date = DateTime.Now
+                }
+            };
+        }
+        private string GetMemoryDetails()
         {
             string memoryDetails = "";
             Process proc = new Process();
@@ -98,23 +116,20 @@ namespace ServerTemperatureSystem.Services
                     memoryDetails = current;
             }
 
-            c.Memory = SetMemoryParams(memoryDetails);
-            //c.Memory.Usage = 100*(c.Memory.Total - c.Memory.Free)/c.Memory.Total;        
+            return memoryDetails;
         }
-        private Memory SetMemoryParams(string memDetails)
+        public Memory SetMemoryParams()
         {
+            string memDetails = GetMemoryDetails();
             string pattern = @"\d+";
             Regex rgx = new Regex(pattern);
             MatchCollection temp = rgx.Matches(memDetails);
 
+            freeMemory = int.Parse(temp[2].Value);
             return new Memory
             {
                 Total = int.Parse(temp[0].Value),
                 Name = "Memory"
-/*                 Used = int.Parse(temp[1].Value),
-                Free = int.Parse(temp[2].Value),
-                Shared = int.Parse(temp[3].Value),
-                BufforCache = int.Parse(temp[4].Value) */
             };
         }
     }

@@ -42,8 +42,8 @@ namespace ServerTemperatureSystem.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public double CriticalTemp { get; set; }
-        public virtual ICollection<UsageDetails> UsageReadings { get; set; }
-        public virtual ICollection<TemperatureDetails> TemperatureReadings { get; set; }
+        public virtual List<UsageDetails> UsageReadings { get; set; }
+        public virtual List<TemperatureDetails> TemperatureReadings { get; set; }
         public virtual CPU CPU { get; set; }
     }
     public class CPU
@@ -53,9 +53,9 @@ namespace ServerTemperatureSystem.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public double CriticalTemp { get; set; }
-        public virtual ICollection<UsageDetails> UsageReadings { get; set; }
-        public virtual ICollection<TemperatureDetails> TemperatureReadings { get; set; }
-        public virtual ICollection<Core> Cores { get; set; }
+        public virtual List<UsageDetails> UsageReadings { get; set; }
+        public virtual List<TemperatureDetails> TemperatureReadings { get; set; }
+        public virtual List<Core> Cores { get; set; }
     }
     public class Memory
     {
@@ -64,7 +64,7 @@ namespace ServerTemperatureSystem.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public int Total { get; set; }
-        public virtual ICollection<UsageDetails> UsageReadings { get; set; }
+        public virtual List<UsageDetails> UsageReadings { get; set; }
 
     }
     public class Motherboard
@@ -74,35 +74,35 @@ namespace ServerTemperatureSystem.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public double CriticalTemp { get; set; }
-        public virtual ICollection<TemperatureDetails> TemperatureReadings { get; set; }
+        public virtual List<TemperatureDetails> TemperatureReadings { get; set; }
     }
     public class CPUParams
     {
         public CPUParams(List<string> parameters)
         {
             Name = parameters[0];
-            User = long.Parse(parameters[1]);
-            Nice = long.Parse(parameters[2]);
-            System = long.Parse(parameters[3]);
-            Idle = long.Parse(parameters[4]);
-            Iowait = long.Parse(parameters[5]);
-            Irq = long.Parse(parameters[6]);
-            Softirq = long.Parse(parameters[7]);
-            Steal = long.Parse(parameters[8]);
-            Guest = long.Parse(parameters[9]);
-            Guest_nice = long.Parse(parameters[10]);
+            User = Int32.Parse(parameters[1]);
+            Nice = Int32.Parse(parameters[2]);
+            System = Int32.Parse(parameters[3]);
+            Idle = Int32.Parse(parameters[4]);
+            Iowait = Int32.Parse(parameters[5]);
+            Irq = Int32.Parse(parameters[6]);
+            Softirq = Int32.Parse(parameters[7]);
+            Steal = Int32.Parse(parameters[8]);
+            Guest = Int32.Parse(parameters[9]);
+            Guest_nice = Int32.Parse(parameters[10]);
         }
         public string Name { get; set; }
-        public long User { get; set; }
-        public long Nice { get; set; }
-        public long System { get; set; }
-        public long Idle { get; set; }
-        public long Iowait { get; set; }
-        public long Irq { get; set; }
-        public long Softirq { get; set; }
-        public long Steal { get; set; }
-        public long Guest { get; set; }
-        public long Guest_nice { get; set; }
+        public int User { get; set; }
+        public int Nice { get; set; }
+        public int System { get; set; }
+        public int Idle { get; set; }
+        public int Iowait { get; set; }
+        public int Irq { get; set; }
+        public int Softirq { get; set; }
+        public int Steal { get; set; }
+        public int Guest { get; set; }
+        public int Guest_nice { get; set; }
     }
     /*     public abstract class TempParameters
     {
@@ -128,7 +128,7 @@ namespace ServerTemperatureSystem.Models
             [Key]
             public int Id { get; set; }
             public String Name { get; set; }
-            public virtual ICollection<ComponentReadings> Readings { get; set; }
+            public virtual List<ComponentReadings> Readings { get; set; }
             public virtual AdditionalInfofrmations AdditionalInfo { get; set; }
         }
         public class AdditionalInfofrmations
@@ -149,7 +149,7 @@ namespace ServerTemperatureSystem.Models
             [Key]
             public int Id { get; set; }
             public String Name { get; set; }
-            public virtual ICollection<ComponentReadings> Readings { get; set; }
+            public virtual List<ComponentReadings> Readings { get; set; }
             public virtual AdditionalInfofrmations AdditionalInfo { get; set; }
         } */
 }

@@ -11,7 +11,6 @@ namespace ServerTemperatureSystem.Controllers
 {
     public class MonitorController : Controller
     {
-        private Components components; 
         private readonly IReadingsService _readings;
         private readonly Temperatures _temperatures;
         private readonly Usage _usage;
@@ -22,22 +21,33 @@ namespace ServerTemperatureSystem.Controllers
             _usage = new Usage();
         }
 
-        public async Task<IActionResult> Index()
+        [HttpPost]
+        public async Task<IActionResult> CurrentReadings()
         {
-            await IsComponentsInDb();
-            return View();
+            Components components = _temperatures.GetCurrentTemps();
+            _usage.SetUsage(ref components); 
+            await _readings.InsertCurrentReadings(components);
+            ComponentsViewModel vm = 
+                new ComponentsViewModel(await _readings.GetReadings());
+
+            return Json(vm);
         }
         public async Task<IActionResult> MainPage()
         {
-            var results = await _readings.GetReadings();
+            await IsComponentsInDb();
+            var model = await _readings.GetReadings();
+            _usage.SetUsage(ref model);
 
-            return View(results);
+            ComponentsViewModel components = 
+                new ComponentsViewModel(model);
+
+            return View(components);
         }
         private async Task IsComponentsInDb()
         {
             var existings = await _readings.ComponentsExisting();
             Components components = _temperatures.GetSystemTemps();
-            _usage.SetUsage(ref components); 
+            components.Memory = _usage.SetMemoryParams(); 
             
             if(!existings[0])
                 await _readings.InsertCPU(components.CPU);

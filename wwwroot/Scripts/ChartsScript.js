@@ -23,7 +23,7 @@ function setUsageValue(c, m) {
 }
 
 function initialize() {
-    setUsageValue(viewmodel.cpu.usage, viewmodel.memory.usage);
+    setUsageValue(viewmodel.cpu.currentUsage, viewmodel.memory.currentUsage);
     memUsage.height = 140;
     cpuUsage.height = 140;
     cpuX = cpuUsage.width / 2;
@@ -32,12 +32,11 @@ function initialize() {
     memY = 130;
     animateOnInit();
     currentDistance = 0;
-    cpuUsageLabel.innerHTML = viewmodel.cpu.usage + "%";
-    memUsageLabel.innerHTML = viewmodel.memory.usage + "%";
+    cpuUsageLabel.innerHTML = viewmodel.cpu.currentUsage + "%";
+    memUsageLabel.innerHTML = viewmodel.memory.currentUsage + "%";
 }
 
 function animateOnInit() {
-    debugger;
     if (cpuResult > memResult)
         loops = cpuResult;
     else

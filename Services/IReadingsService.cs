@@ -9,5 +9,6 @@ public interface IReadingsService
     Task InsertCPU(CPU cpu);
     Task InsertMobo(Motherboard mobo);
     Task InsertMemory(Memory memory);
-    Task InsertCores(List<Core> cores);
+    Task InsertCurrentReadings(Components components);
+    //TemperatureDetails GetTempDetails();
 }

@@ -33,18 +33,56 @@ public class ReadingsDataService : IReadingsService
     }
     public async Task InsertCPU(CPU cpu)
     {
+        bool coresInserted = await InsertCores(cpu.Cores.ToList());
+        if (coresInserted)
+            _context.CPU.Add(cpu);
 
+        await _context.SaveChangesAsync();
+    }
+    private async Task<bool> InsertCores(List<Core> cores)
+    {
+        _context.Cores.AddRange(cores);
+        return await _context.SaveChangesAsync() > 0;
     }
     public async Task InsertMobo(Motherboard mobo)
     {
-
+        _context.Mobo.Add(mobo);
+        await _context.SaveChangesAsync();
     }
     public async Task InsertMemory(Memory memory)
     {
-
+        _context.Memory.Add(memory);
+        await _context.SaveChangesAsync();
     }
-    public async Task InsertCores(List<Core> cores)
+    public async Task InsertCurrentReadings(Components components)
     {
+        var cpu = await _context.CPU.FirstOrDefaultAsync();
+        var mobo = await _context.Mobo.FirstOrDefaultAsync();
+        var memory = await _context.Memory.FirstOrDefaultAsync();
+        var cores = await _context.Cores.ToListAsync();
+        components.CPU.TemperatureReadings.FirstOrDefault().CPU = cpu;
+        components.CPU.UsageReadings.FirstOrDefault().CPU = cpu;
+        components.MB.TemperatureReadings.FirstOrDefault().Mobo = mobo;
+        components.Memory.UsageReadings.FirstOrDefault().Memory = memory;
 
+        for(int i = 0; i < components.CPU.Cores.Count(); i++)
+        {
+            components.CPU.Cores[i].TemperatureReadings.FirstOrDefault().Core = cores[i];
+            components.CPU.Cores[i].UsageReadings.FirstOrDefault().Core = cores[i];
+            await _context.TemperatureDetails
+                .AddAsync(components.CPU.Cores[i].TemperatureReadings.FirstOrDefault());
+            await _context.UsageDetails.AddAsync(components.CPU.Cores[i].UsageReadings.FirstOrDefault());
+        }
+
+        await _context.TemperatureDetails
+            .AddAsync(components.CPU.TemperatureReadings.FirstOrDefault());
+        await _context.UsageDetails
+            .AddAsync(components.CPU.UsageReadings.FirstOrDefault());
+        await _context.TemperatureDetails
+            .AddAsync(components.MB.TemperatureReadings.FirstOrDefault());
+        await _context.UsageDetails
+            .AddAsync(components.Memory.UsageReadings.FirstOrDefault());
+
+        await _context.SaveChangesAsync();
     }
 }
