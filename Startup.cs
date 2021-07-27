@@ -12,6 +12,8 @@ using ServerTemperatureSystem.EFCoreDbContext;
 using MySql.Data.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using Quartz;
+using ServerTemperatureSystem.Services.ComponentReadingsProvider;
 
 namespace ServerTemperatureSystem
 {
@@ -23,6 +25,24 @@ namespace ServerTemperatureSystem
             Configuration = configuration;
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddQuartz(q =>
+            {
+                q.UseMicrosoftDependencyInjectionScopedJobFactory();
+
+                var jobKey = new JobKey("ReadingsJob");
+
+                q.AddJob<ReadingsJob>( options => 
+                    options.WithIdentity(jobKey));
+
+                q.AddTrigger(options => options
+                    .ForJob(jobKey)
+                    .WithIdentity("ReadingsJob-trigger")
+                    .WithCronSchedule("0/5 * * * * ?"));
+            });
+
+            services.AddQuartzHostedService( q =>
+                q.WaitForJobsToComplete = true);
+
             var serverVersion = new MySqlServerVersion(new Version(8,0,25));
             services.AddControllersWithViews();
             services.AddDbContext<AppParamsDbContext>(options => 

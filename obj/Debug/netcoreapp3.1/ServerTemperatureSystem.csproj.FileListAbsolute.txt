@@ -55,6 +55,9 @@
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Quartz.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Quartz.Extensions.DependencyInjection.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Quartz.Extensions.Hosting.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Renci.SshNet.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/SshNet.Security.Cryptography.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
