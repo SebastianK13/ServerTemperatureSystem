@@ -17,7 +17,7 @@ namespace ServerTemperatureSystem.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
-        public int Id { get; set; }
+        public string Id { get; set; }
         public int Usage { get; set; }
         public DateTime Date { get; set; }
         public virtual CPU CPU { get; set; }
@@ -28,7 +28,7 @@ namespace ServerTemperatureSystem.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
-        public int Id { get; set; }
+        public string Id { get; set; }
         public double Temperature { get; set; }
         public DateTime Date { get; set; }
         public virtual CPU CPU { get; set; }
@@ -104,52 +104,4 @@ namespace ServerTemperatureSystem.Models
         public int Guest { get; set; }
         public int Guest_nice { get; set; }
     }
-    /*     public abstract class TempParameters
-    {
-        public double Temp { get; set; }
-        public double CriticalTemp { get; set; }
-        public double MaxTemp { get; set; }
-        public double MinTemp { get; set; }
-    } */
-
-    /*     public class ComponentReadings
-        {
-            [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-            [Key]
-            public int Id { get; set; }
-            public virtual Component Details { get; set; }
-            public int Usage { get; set; }
-            public float Temperature { get; set; }
-            public DateTime Date { get; set; }
-        } */
-    /*     public class Component
-        {
-            [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-            [Key]
-            public int Id { get; set; }
-            public String Name { get; set; }
-            public virtual List<ComponentReadings> Readings { get; set; }
-            public virtual AdditionalInfofrmations AdditionalInfo { get; set; }
-        }
-        public class AdditionalInfofrmations
-        {
-            [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-            [Key]
-            public int Id { get; set; }
-            public double CriticalTemp { get; set; }
-            public int Total { get; set; }
-            public int Used { get; set; }
-            public int Free { get; set; }
-            public int Shared { get; set; }
-            public int BufforCache { get; set; }
-        }
-        public class Core
-        {
-            [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-            [Key]
-            public int Id { get; set; }
-            public String Name { get; set; }
-            public virtual List<ComponentReadings> Readings { get; set; }
-            public virtual AdditionalInfofrmations AdditionalInfo { get; set; }
-        } */
 }

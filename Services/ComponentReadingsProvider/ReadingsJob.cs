@@ -12,11 +12,8 @@ namespace ServerTemperatureSystem.Services.ComponentReadingsProvider
         private readonly IReadingsService _readings;
         private readonly Temperatures _temperatures;
         private readonly Usage _usage;
-        private readonly ILogger<ReadingsJob> _logger;
-        public ReadingsJob(ILogger<ReadingsJob> logger, 
-            IReadingsService readings) 
+        public ReadingsJob(IReadingsService readings) 
         {
-            _logger = logger;
             _readings = readings;
             _temperatures = new Temperatures();
             _usage = new Usage();
@@ -24,7 +21,8 @@ namespace ServerTemperatureSystem.Services.ComponentReadingsProvider
         
         public async Task Execute(IJobExecutionContext context)
         {
-          Components components = _temperatures.GetCurrentTemps();
+            await _readings.RemoveReadingsOlderThan24h();
+            Components components = _temperatures.GetCurrentTemps();
             _usage.SetUsage(ref components); 
             await _readings.InsertCurrentReadings(components);
             await Task.CompletedTask;

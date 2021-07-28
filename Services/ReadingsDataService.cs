@@ -85,4 +85,15 @@ public class ReadingsDataService : IReadingsService
 
         await _context.SaveChangesAsync();
     }
+    public async Task RemoveReadingsOlderThan24h()
+    {
+        DateTime date = DateTime.Now.AddHours(-24);
+        var tempReadings = await _context.TemperatureDetails.Where(d => d.Date < date).ToListAsync();
+        var usageReadings = await _context.UsageDetails.Where(d => d.Date < date).ToListAsync();
+
+        _context.TemperatureDetails.RemoveRange(tempReadings);
+        _context.UsageDetails.RemoveRange(usageReadings);
+
+        await _context.SaveChangesAsync();
+    }
 }

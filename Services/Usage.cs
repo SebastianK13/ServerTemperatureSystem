@@ -17,7 +17,7 @@ namespace ServerTemperatureSystem.Services
         private List<int> cpuActiveCurr = new List<int>();
         private List<int> cpuTotalCurr = new List<int>();
         private List<CPUParams> CpuParamsTemp = new List<CPUParams>();
-        private int freeMemory = 0;
+        private int usedMemory = 0;
         public void SetUsage(ref Components components)
         {
             CountCPUFirstProbe();
@@ -74,7 +74,8 @@ namespace ServerTemperatureSystem.Services
             int i = 0;
             components.CPU.UsageReadings = new List<UsageDetails>{
                         new UsageDetails{
-                            Usage = 100 * (cpuActiveCurr[0] - cpuActivePrevs[0]) / (cpuTotalCurr[0] - cpuTotalPrevs[0])
+                            Usage = 100 * (cpuActiveCurr[0] - cpuActivePrevs[0]) / (cpuTotalCurr[0] - cpuTotalPrevs[0]),
+                            Date = DateTime.Now
                         }
                     };
 
@@ -94,7 +95,7 @@ namespace ServerTemperatureSystem.Services
             c.Memory  = SetMemoryParams();           
             c.Memory.UsageReadings = new List<UsageDetails>{
                 new UsageDetails{
-                    Usage = 100*(c.Memory.Total - freeMemory)/c.Memory.Total,
+                    Usage = 100*usedMemory/c.Memory.Total,
                     Date = DateTime.Now
                 }
             };
@@ -125,7 +126,7 @@ namespace ServerTemperatureSystem.Services
             Regex rgx = new Regex(pattern);
             MatchCollection temp = rgx.Matches(memDetails);
 
-            freeMemory = int.Parse(temp[2].Value);
+            usedMemory = int.Parse(temp[1].Value);
             return new Memory
             {
                 Total = int.Parse(temp[0].Value),

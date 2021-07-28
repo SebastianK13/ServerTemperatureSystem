@@ -10,5 +10,6 @@ public interface IReadingsService
     Task InsertMobo(Motherboard mobo);
     Task InsertMemory(Memory memory);
     Task InsertCurrentReadings(Components components);
+    Task RemoveReadingsOlderThan24h();
     //TemperatureDetails GetTempDetails();
 }

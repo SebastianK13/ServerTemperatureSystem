@@ -37,7 +37,7 @@ namespace ServerTemperatureSystem
                 q.AddTrigger(options => options
                     .ForJob(jobKey)
                     .WithIdentity("ReadingsJob-trigger")
-                    .WithCronSchedule("0/5 * * * * ?"));
+                    .WithCronSchedule("0 0/1 * * * ?"));
             });
 
             services.AddQuartzHostedService( q =>
