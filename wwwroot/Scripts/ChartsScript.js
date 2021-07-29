@@ -36,6 +36,29 @@ function initialize() {
     memUsageLabel.innerHTML = viewmodel.memory.currentUsage + "%";
 }
 
+function UpdateChartUsages() {
+    setUsageValue(viewmodel.cpu.currentUsage, viewmodel.memory.currentUsage);
+    memUsage.height = 140;
+    cpuUsage.height = 140;
+    cpuX = cpuUsage.width / 2;
+    cpuY = 130;
+    memX = memUsage.width / 2;
+    memY = 130;
+    animate();
+    currentDistance = 0;
+    cpuUsageLabel.innerHTML = viewmodel.cpu.currentUsage + "%";
+    memUsageLabel.innerHTML = viewmodel.memory.currentUsage + "%";
+}
+
+function animate() {
+
+    drawCPUCircle(cpuX, cpuY, 100, Math.PI, 2 * Math.PI, false, inactiveColor, 25);
+    drawMemCircle(memX, memY, 100, Math.PI, 2 * Math.PI, false, inactiveColor, 25);
+
+    drawCPUBar(cpuResult);
+    drawMemBar(memResult);
+}
+
 function animateOnInit() {
     if (cpuResult > memResult)
         loops = cpuResult;

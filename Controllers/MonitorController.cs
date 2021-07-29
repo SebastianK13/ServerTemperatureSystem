@@ -24,11 +24,16 @@ namespace ServerTemperatureSystem.Controllers
         [HttpPost]
         public async Task<IActionResult> CurrentReadings()
         {
-            Components components = _temperatures.GetCurrentTemps();
+             Components components = _temperatures.GetCurrentTemps();
             _usage.SetUsage(ref components); 
-            await _readings.InsertCurrentReadings(components);
+            //await _readings.InsertCurrentReadings(components);
             ComponentsViewModel vm = 
                 new ComponentsViewModel(await _readings.GetReadings());
+
+                vm.CPU.CurrentUsage = components.CPU.UsageReadings
+                    .Select(u => u.Usage).FirstOrDefault();
+                vm.Memory.CurrentUsage = components.Memory.UsageReadings
+                    .Select(u => u.Usage).FirstOrDefault();
 
             return Json(vm);
         }
@@ -36,7 +41,6 @@ namespace ServerTemperatureSystem.Controllers
         {
             await IsComponentsInDb();
             var model = await _readings.GetReadings();
-            _usage.SetUsage(ref model);
 
             ComponentsViewModel components = 
                 new ComponentsViewModel(model);

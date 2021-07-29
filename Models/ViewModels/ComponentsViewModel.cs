@@ -15,7 +15,8 @@ public class ComponentsViewModel
                 Name = c.Name,
                 CriticalTemp = c.CriticalTemp,
                 UsageReadings = ModelConverter.SetUsage(c.UsageReadings.ToList()),
-                TemperatureReadings = ModelConverter.SetTemperatures(c.TemperatureReadings.ToList())
+                TemperatureReadings = ModelConverter
+                    .SetTemperatures(c.TemperatureReadings.OrderBy(d=>d.Date).ToList())
             });
         };
         CPU = new CPUViewModel
@@ -23,22 +24,25 @@ public class ComponentsViewModel
             Name = components.CPU.Name,
             CriticalTemp = components.CPU.CriticalTemp,
             UsageReadings = ModelConverter.SetUsage(components.CPU.UsageReadings.ToList()),
-            TemperatureReadings = ModelConverter.SetTemperatures(components.CPU.TemperatureReadings.ToList()),
+            TemperatureReadings = ModelConverter
+                .SetTemperatures(components.CPU.TemperatureReadings.OrderBy(d=>d.Date).ToList()),
             Cores = cores,
-            CurrentUsage = components.CPU.UsageReadings.Last().Usage
+            CurrentUsage = components.CPU.UsageReadings.OrderBy(d=>d.Date).Last().Usage
         };
         Mobo = new MotherboardViewModel
         {
             Name = components.MB.Name,
             CriticalTemp = components.MB.CriticalTemp,
-            TemperatureReadings = ModelConverter.SetTemperatures(components.MB.TemperatureReadings.ToList())
+            TemperatureReadings = ModelConverter
+                .SetTemperatures(components.MB.TemperatureReadings.OrderBy(d=>d.Date).ToList())
         };
         Memory = new MemoryViewModel
         {
             Name = components.Memory.Name,
             Total = components.Memory.Total,
-            UsageReadings = ModelConverter.SetUsage(components.Memory.UsageReadings.ToList()),
-            CurrentUsage = components.Memory.UsageReadings.Last().Usage
+            UsageReadings = ModelConverter
+                .SetUsage(components.Memory.UsageReadings.OrderBy(d=>d.Date).ToList()),
+            CurrentUsage = components.Memory.UsageReadings.OrderBy(d=>d.Date).Last().Usage
         };
     }
     public CPUViewModel CPU { get; set; }

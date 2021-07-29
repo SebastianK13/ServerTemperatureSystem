@@ -7,6 +7,11 @@ var gridLineHeight = 0;
 var gridWidth = 0;
 var timeRange = [];
 
+function updateGridChart()
+{
+    //readings update implementation
+}
+
 generateCurve();
 
 function generateCurve() {
@@ -18,12 +23,12 @@ function generateCurve() {
     drawLine();
 }
 
-function drawLine() {
+function drawLine(x,y) {
     chartTCtx.beginPath();
     chartTCtx.strokeStyle = "blue";
     chartTCtx.lineWidth = 1;
     chartTCtx.moveTo(31, cpuUY - 31);
-    chartTCtx.lineTo(100, 150);
+    chartTCtx.lineTo(x, y);
     chartTCtx.stroke();
     drawPoint();
 }

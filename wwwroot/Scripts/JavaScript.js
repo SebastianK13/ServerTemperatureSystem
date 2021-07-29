@@ -10,6 +10,7 @@ var memTotal = document.getElementById("memtContent");
 const additionalParams = {
     method:"POST"
 };
+var currentViewModel = viewmodel;
 
 window.addEventListener("DOMContentLoaded", function(){
     generalState.innerHTML = "Normal";
@@ -18,18 +19,23 @@ window.addEventListener("DOMContentLoaded", function(){
     moboCriticalTemp.innerHTML = viewmodel.mobo.criticalTemp+"°C";
     cpuCriticalTemp.innerHTML = viewmodel.cpu.criticalTemp+"°C";
     memTotal.innerHTML = viewmodel.memory.total;
-    //FetchData();
+    setInterval(FetchData, 1000);
 });
 
 function FetchData()
 {
     var url = '/Monitor/CurrentReadings/'
     fetch(url, additionalParams)
-    .then(function(response) {
-        return response.json();
-    }).then(function(data){
+    .then(response => response.json())
+    .then(data => {
+        viewmodel = data;
+    })
+    .then(function(data){
         console.log(data);
     }).catch(function(){
         console.log("error");
     });
+
+    UpdateChartUsages();
+    updateGridChart();
 }
