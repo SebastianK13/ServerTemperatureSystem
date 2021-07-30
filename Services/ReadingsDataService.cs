@@ -9,18 +9,72 @@ using Microsoft.EntityFrameworkCore;
 public class ReadingsDataService : IReadingsService
 {
     private readonly AppParamsDbContext _context;
+    private DateTime date;
     public ReadingsDataService(AppParamsDbContext context)
     {
         _context = context;
     }
-    public async Task<Components> GetReadings()
+    public async Task<Components> GetReadings(DateTime date)
     {
-        Components components = new Components();
-        components.CPU = await _context.CPU.FirstOrDefaultAsync();
-        components.MB = await _context.Mobo.FirstOrDefaultAsync();
-        components.Memory = await _context.Memory.FirstOrDefaultAsync();
+        this.date = date;
+        Components c = new Components();
+        c.CPU = await GetCPUAsync();
+        c.MB = await GetMotherboardAsync();
+        c.Memory = await GetMemoryAsync();
 
-        return components;
+        return c;
+    }
+    private async Task<Memory> GetMemoryAsync()
+    {
+        Memory m = await _context.Memory.FirstOrDefaultAsync();
+        m.UsageReadings = await _context.UsageDetails
+            .Where(i => i.Memory.Id == m.Id && i.Date >= date)
+            .OrderByDescending(d => d.Date)
+            .ToListAsync();
+        
+        return m;
+    }
+    private async Task<Motherboard> GetMotherboardAsync()
+    {
+        Motherboard mobo = await _context.Mobo.FirstOrDefaultAsync();
+        mobo.TemperatureReadings = await _context.TemperatureDetails
+            .Where(i => i.Mobo.Id == mobo.Id && i.Date >= date)
+            .OrderByDescending(d => d.Date)
+            .ToListAsync();
+
+        return mobo;
+    }
+    private async Task<CPU> GetCPUAsync()
+    {
+        var cores = await _context.Cores.ToListAsync();
+
+        for (int i = 0; i < cores.Count(); i++)
+        {
+            cores[i].UsageReadings = await _context.UsageDetails
+                .Where(c => c.Core.Id == cores[i].Id && c.Date >= date)
+                .OrderByDescending(d => d.Date)
+                .ToListAsync();
+
+            cores[i].TemperatureReadings = await _context.TemperatureDetails
+                .Where(c => c.Core.Id == cores[i].Id && c.Date >= date)
+                .OrderByDescending(d => d.Date)
+                .ToListAsync();
+        }
+
+        CPU c = await _context.CPU.FirstOrDefaultAsync();
+        c.UsageReadings = await _context.UsageDetails
+            .Where(i => i.CPU.Id == c.Id && i.Date >= date)
+            .OrderByDescending(d => d.Date)
+            .ToListAsync();
+
+        c.TemperatureReadings = await _context.TemperatureDetails
+            .Where(i => i.CPU.Id == c.Id && i.Date >= date)
+            .OrderByDescending(d => d.Date)
+            .ToListAsync();
+
+        c.Cores = cores;
+
+        return c;
     }
     public async Task<List<bool>> ComponentsExisting()
     {
@@ -65,7 +119,7 @@ public class ReadingsDataService : IReadingsService
         components.MB.TemperatureReadings.FirstOrDefault().Mobo = mobo;
         components.Memory.UsageReadings.FirstOrDefault().Memory = memory;
 
-        for(int i = 0; i < components.CPU.Cores.Count(); i++)
+        for (int i = 0; i < components.CPU.Cores.Count(); i++)
         {
             components.CPU.Cores[i].TemperatureReadings.FirstOrDefault().Core = cores[i];
             components.CPU.Cores[i].UsageReadings.FirstOrDefault().Core = cores[i];

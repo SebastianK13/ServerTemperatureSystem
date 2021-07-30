@@ -37,5 +37,5 @@ function FetchData()
     });
 
     UpdateChartUsages();
-    updateGridChart();
+    generateCurve();
 }

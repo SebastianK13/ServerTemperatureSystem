@@ -3,6 +3,7 @@ using Quartz;
 using System.Threading.Tasks;
 using System;
 using ServerTemperatureSystem.Models;
+using ServerTemperatureSystem.Services;
 
 namespace ServerTemperatureSystem.Services.ComponentReadingsProvider
 {

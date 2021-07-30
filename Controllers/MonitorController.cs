@@ -26,9 +26,13 @@ namespace ServerTemperatureSystem.Controllers
         {
              Components components = _temperatures.GetCurrentTemps();
             _usage.SetUsage(ref components); 
-            //await _readings.InsertCurrentReadings(components);
+            DateTime date = DateTime.Now;
+            date.AddSeconds(-date.Second);
+            date.AddMilliseconds(-date.Millisecond);
+
             ComponentsViewModel vm = 
-                new ComponentsViewModel(await _readings.GetReadings());
+                new ComponentsViewModel(
+                    await _readings.GetReadings(TimeService.Last20Minutes()));
 
                 vm.CPU.CurrentUsage = components.CPU.UsageReadings
                     .Select(u => u.Usage).FirstOrDefault();
@@ -40,7 +44,7 @@ namespace ServerTemperatureSystem.Controllers
         public async Task<IActionResult> MainPage()
         {
             await IsComponentsInDb();
-            var model = await _readings.GetReadings();
+            var model = await _readings.GetReadings(TimeService.Last20Minutes());
 
             ComponentsViewModel components = 
                 new ComponentsViewModel(model);

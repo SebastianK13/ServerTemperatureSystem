@@ -1,15 +1,54 @@
-const chartTemp = document.getElementById("coresCpuChartU");
-const chartTCtx = chartTemp.getContext("2d");
+const chartUsage = document.getElementById("coresCpuChartU");
+const chartUCtx = chartUsage.getContext("2d");
 const area = document.getElementById("cuUsage");
 var cpuUX = 0;
 var cpuUY = 0;
 var gridLineHeight = 0;
 var gridWidth = 0;
 var timeRange = [];
+var lastX = 0 ;
+var lastY = 0;
+var previousReadings;
 
 function updateGridChart()
 {
     //readings update implementation
+    var x = 0;
+    lastX = 0;
+    lastY = 0;
+    for(i = 0; i < 20; i++)
+    {  
+            if (i == 0)
+            {
+                //generateHoursAndMinutes();
+                x = gridWidth - 1;
+            }
+            else
+            {
+                x = ((i+1) * gridWidth - 1);
+            }
+        var y = viewmodel.cpu.usageReadings[i].usage;
+        drawLine(x, y);
+        drawPoint(x, y);
+        lastX = x;
+        lastY = y;
+    }
+}
+
+function drawLine(x,y) {
+    chartUCtx.beginPath();
+    chartUCtx.strokeStyle = "blue";
+    chartUCtx.lineWidth = 1;
+    chartUCtx.moveTo(lastX+34, chartUsage.height - (lastY+30));
+    chartUCtx.lineTo(x+34, chartUsage.height - (y+30));
+    chartUCtx.stroke();
+}
+
+function drawPoint(x,y) {
+    chartUCtx.beginPath();
+    chartUCtx.fillStyle = "white";
+    chartUCtx.arc(x+32, chartUsage.height - (y+30), 3, 0, 2 * Math.PI, true);
+    chartUCtx.fill();
 }
 
 generateCurve();
@@ -17,28 +56,12 @@ generateCurve();
 function generateCurve() {
     cpuUX = area.clientWidth;
     cpuUY = area.clientHeight;
-    chartTemp.height = cpuUY;
-    chartTemp.width = cpuUX;
+    chartUsage.height = cpuUY;
+    chartUsage.width = cpuUX;
     drawGraphGrid();
-    drawLine();
+    updateGridChart();
 }
 
-function drawLine(x,y) {
-    chartTCtx.beginPath();
-    chartTCtx.strokeStyle = "blue";
-    chartTCtx.lineWidth = 1;
-    chartTCtx.moveTo(31, cpuUY - 31);
-    chartTCtx.lineTo(x, y);
-    chartTCtx.stroke();
-    drawPoint();
-}
-
-function drawPoint() {
-    chartTCtx.beginPath();
-    chartTCtx.fillStyle = "white";
-    chartTCtx.arc(100, 150, 3, 0, 2 * Math.PI, true);
-    chartTCtx.fill();
-}
 function drawGraphGrid() {
     drawHorizontalLanes();
     drawVerticalLanes();
@@ -57,48 +80,55 @@ function drawHorizontalLanes() {
             signAxisY(i*20, currentHeight);
         }
 
-        chartTCtx.beginPath();
-        chartTCtx.strokeStyle = "whitesmoke";
-        chartTCtx.lineWidth = 1;
-        chartTCtx.moveTo(30, currentHeight - 30);
-        chartTCtx.lineTo(cpuUX, currentHeight - 30);
-        chartTCtx.stroke();
+        chartUCtx.beginPath();
+        chartUCtx.strokeStyle = 'rgba(255,255,255, .5)';
+        chartUCtx.lineWidth = 1;
+        chartUCtx.moveTo(32, currentHeight - 30);
+        chartUCtx.lineTo(cpuUX-2, currentHeight - 30);
+        chartUCtx.stroke();
     }
 }
 
 function signAxisY(axisNum, currentHeight){
-    chartTCtx.fillStyle = "white";
-    chartTCtx.font = "10px Arial";
-    chartTCtx.fillText(axisNum, 5, currentHeight);
+    chartUCtx.fillStyle = "white";
+    chartUCtx.font = "10px Arial";
+    chartUCtx.fillText(axisNum, 5, currentHeight);
 }
 
 function signAxisX(axisNum, currentWidth){
-    chartTCtx.fillStyle = "white";
-    chartTCtx.font = "10px Arial";
-    chartTCtx.fillText(axisNum, currentWidth+1, cpuUY - 10);
+    chartUCtx.fillStyle = "white";
+    chartUCtx.font = "10px Arial";
+    chartUCtx.fillText(axisNum, currentWidth+1, cpuUY - 10);
 }
 
 function drawVerticalLanes() {
     gridWidth = (cpuUX - 30) / 20;
+    var difference = 0;
+    var finalPoint = 0;
     for (i = 0; i <= 20; i++) {
-        currentWidth = 0;
+        currentWidth = cpuUX - (i * gridWidth - 1);
+        difference = 32;
+        finalPoint = 2;
 
         if (i == 0)
         {
             generateHoursAndMinutes();
             currentWidth = cpuUX - 1;
+            difference = 30;
+            finalPoint = 0;
         }
-        else
+        else if(i == 20)
         {
-            currentWidth = cpuUX - (i * gridWidth - 1);
+            difference = 30;
+            finalPoint = 0;
         }
 
-        chartTCtx.beginPath();
-        chartTCtx.strokeStyle = "whitesmoke";
-        chartTCtx.lineWidth = 1;
-        chartTCtx.moveTo(currentWidth, cpuUY - 30);
-        chartTCtx.lineTo(currentWidth, 0);
-        chartTCtx.stroke();
+        chartUCtx.beginPath();
+        chartUCtx.strokeStyle = 'rgba(255,255,255, .5)';
+        chartUCtx.lineWidth = 1;
+        chartUCtx.moveTo(currentWidth, cpuUY - difference);
+        chartUCtx.lineTo(currentWidth, finalPoint);
+        chartUCtx.stroke();
     }
 }
 function generateHoursAndMinutes(){
