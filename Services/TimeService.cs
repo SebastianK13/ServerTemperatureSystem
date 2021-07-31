@@ -8,6 +8,7 @@ namespace ServerTemperatureSystem.Services
         {
             DateTime date = DateTime.Now;
             date = date.AddMinutes(-20);
+            date = date.AddSeconds(-30);
             date = date.AddMilliseconds(-date.Millisecond);
 
             return date;

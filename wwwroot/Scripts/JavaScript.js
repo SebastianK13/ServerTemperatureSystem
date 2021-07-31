@@ -38,4 +38,5 @@ function FetchData()
 
     UpdateChartUsages();
     generateCurve();
+    generateCurveT();
 }

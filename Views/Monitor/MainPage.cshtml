@@ -44,6 +44,9 @@
                 <div id="cuUsage" class="bottom-container">
                     <canvas id="coresCpuChartU"></canvas>
                 </div>
+                <div id="usageInfoSection" class="chartInfoSection">
+
+                </div>
             </div>
         </div>
         <div class="big-section">
@@ -64,6 +67,9 @@
             <div id="mbCPUTemp" class="long-element">
                 <p class="container-header">Motherboard & CPU temperature</p>
                 <div id="mbcTemp" class="bottom-container">
+                    <canvas id="moboCpuChartT"></canvas>
+                </div>
+                <div id="tempinfoSection" class="chartInfoSection">
 
                 </div>
             </div>
@@ -91,5 +97,6 @@
     <script type="text/javascript">var viewmodel = @Json.Serialize(Model)</script>
     <script type="text/javascript" src="./Scripts/JavaScript.js"></script>
     <script type="text/javascript" src="./Scripts/ChartsScript.js"></script>
-    <script type="text/javascript" src="./Scripts/GridChartsScript.js"></script>
+    <script type="text/javascript" src="./Scripts/GridChartsUsageScript.js"></script>
+    <script type="text/javascript" src="./Scripts/GridChartsTemperatureScript.js"></script>
 </body>

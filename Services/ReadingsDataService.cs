@@ -29,7 +29,7 @@ public class ReadingsDataService : IReadingsService
         Memory m = await _context.Memory.FirstOrDefaultAsync();
         m.UsageReadings = await _context.UsageDetails
             .Where(i => i.Memory.Id == m.Id && i.Date >= date)
-            .OrderByDescending(d => d.Date)
+            .OrderBy(d => d.Date)
             .ToListAsync();
         
         return m;
@@ -39,7 +39,7 @@ public class ReadingsDataService : IReadingsService
         Motherboard mobo = await _context.Mobo.FirstOrDefaultAsync();
         mobo.TemperatureReadings = await _context.TemperatureDetails
             .Where(i => i.Mobo.Id == mobo.Id && i.Date >= date)
-            .OrderByDescending(d => d.Date)
+            .OrderBy(d => d.Date)
             .ToListAsync();
 
         return mobo;
@@ -52,24 +52,24 @@ public class ReadingsDataService : IReadingsService
         {
             cores[i].UsageReadings = await _context.UsageDetails
                 .Where(c => c.Core.Id == cores[i].Id && c.Date >= date)
-                .OrderByDescending(d => d.Date)
+                .OrderBy(d => d.Date)
                 .ToListAsync();
 
             cores[i].TemperatureReadings = await _context.TemperatureDetails
                 .Where(c => c.Core.Id == cores[i].Id && c.Date >= date)
-                .OrderByDescending(d => d.Date)
+                .OrderBy(d => d.Date)
                 .ToListAsync();
         }
 
         CPU c = await _context.CPU.FirstOrDefaultAsync();
         c.UsageReadings = await _context.UsageDetails
             .Where(i => i.CPU.Id == c.Id && i.Date >= date)
-            .OrderByDescending(d => d.Date)
+            .OrderBy(d => d.Date)
             .ToListAsync();
 
         c.TemperatureReadings = await _context.TemperatureDetails
             .Where(i => i.CPU.Id == c.Id && i.Date >= date)
-            .OrderByDescending(d => d.Date)
+            .OrderBy(d => d.Date)
             .ToListAsync();
 
         c.Cores = cores;
