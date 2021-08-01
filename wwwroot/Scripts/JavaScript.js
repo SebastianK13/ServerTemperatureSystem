@@ -20,6 +20,7 @@ window.addEventListener("DOMContentLoaded", function(){
     cpuCriticalTemp.innerHTML = viewmodel.cpu.criticalTemp+"°C";
     memTotal.innerHTML = viewmodel.memory.total;
     setInterval(FetchData, 1000);
+    setInterval(UpdateCharts, 1000);
 });
 
 function FetchData()
@@ -37,6 +38,11 @@ function FetchData()
     });
 
     UpdateChartUsages();
+}
+
+function UpdateCharts(){
     generateCurve();
     generateCurveT();
+    updateUsageInfoSection();
+    updateTempInfoSection();
 }

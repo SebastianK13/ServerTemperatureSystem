@@ -34,6 +34,50 @@ public class ReadingsDataService : IReadingsService
         
         return m;
     }
+    public async Task<double> GetTempMinValue(int id, string componentName)
+    {
+        switch(componentName)
+        {
+            case "CPU":
+                return await _context.TemperatureDetails.Where(i=>i.CPU.Id == id).MinAsync(t=>t.Temperature);
+            case "Mobo":
+                return await _context.TemperatureDetails.Where(i=>i.Mobo.Id == id).MinAsync(t=>t.Temperature);
+        }
+        return 0;
+    }
+    public async Task<double> GetTempMaxValue(int id, string componentName)
+    {
+        switch(componentName)
+        {
+            case "CPU":
+                return await _context.TemperatureDetails.Where(i=>i.CPU.Id == id).MaxAsync(t=>t.Temperature);
+            case "Mobo":
+                return await _context.TemperatureDetails.Where(i=>i.Mobo.Id == id).MaxAsync(t=>t.Temperature);
+        }
+        return 0;
+    }
+    public async Task<int> GetUsageMinValue(int id, string componentName)
+    {
+        switch(componentName)
+        {
+            case "CPU":
+                return await _context.UsageDetails.Where(i=>i.CPU.Id == id).MinAsync(u => u.Usage);
+            case "Memory":
+                return await _context.UsageDetails.Where(i=>i.Memory.Id == id).MinAsync(u => u.Usage);
+        }
+        return 0;
+    }
+    public async Task<int> GetUsageMaxValue(int id, string componentName)
+    {
+        switch(componentName)
+        {
+            case "CPU":
+                return await _context.UsageDetails.Where(i=>i.CPU.Id == id).MaxAsync(u => u.Usage);
+            case "Memory":
+                return await _context.UsageDetails.Where(i=>i.Memory.Id == id).MaxAsync(u => u.Usage);
+        }
+        return 0;
+    }
     private async Task<Motherboard> GetMotherboardAsync()
     {
         Motherboard mobo = await _context.Mobo.FirstOrDefaultAsync();

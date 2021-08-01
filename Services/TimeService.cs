@@ -7,8 +7,8 @@ namespace ServerTemperatureSystem.Services
         public static DateTime Last20Minutes()
         {
             DateTime date = DateTime.Now;
-            date = date.AddMinutes(-20);
-            date = date.AddSeconds(-30);
+            date = date.AddMinutes(-21);
+            //date = date.AddSeconds(-30);
             date = date.AddMilliseconds(-date.Millisecond);
 
             return date;

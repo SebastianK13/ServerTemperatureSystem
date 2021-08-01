@@ -94,7 +94,7 @@ function drawCPUUsageLine(x,y) {
 
 function drawMemoryUsageLine(x,y) {
     chartUCtx.beginPath();
-    chartUCtx.strokeStyle = "red";
+    chartUCtx.strokeStyle = "teal";
     chartUCtx.lineWidth = 2;
     chartUCtx.moveTo(lastX+34, chartUsage.height - (lastMemY+30));
     chartUCtx.lineTo(x+34, chartUsage.height - (y+30));

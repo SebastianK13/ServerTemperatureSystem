@@ -24,20 +24,31 @@ namespace ServerTemperatureSystem.Controllers
         [HttpPost]
         public async Task<IActionResult> CurrentReadings()
         {
-             Components components = _temperatures.GetCurrentTemps();
+            Components components = _temperatures.GetCurrentTemps();
             _usage.SetUsage(ref components); 
             DateTime date = DateTime.Now;
             date.AddSeconds(-date.Second);
             date.AddMilliseconds(-date.Millisecond);
 
-            ComponentsViewModel vm = 
-                new ComponentsViewModel(
-                    await _readings.GetReadings(TimeService.Last20Minutes()));
+            var currentReadings = await _readings.GetReadings(TimeService.Last20Minutes());
+
+            ComponentsViewModel vm = new ComponentsViewModel(currentReadings);
 
                 vm.CPU.CurrentUsage = components.CPU.UsageReadings
                     .Select(u => u.Usage).FirstOrDefault();
                 vm.Memory.CurrentUsage = components.Memory.UsageReadings
                     .Select(u => u.Usage).FirstOrDefault();
+
+            vm.CPU.HighestTemp = await _readings.GetTempMaxValue(currentReadings.CPU.Id, "CPU");
+            vm.CPU.LowestTemp = await _readings.GetTempMinValue(currentReadings.CPU.Id, "CPU");
+            vm.CPU.HighestUsage = await _readings.GetUsageMaxValue(currentReadings.CPU.Id, "CPU");
+            vm.CPU.LowestUsage = await _readings.GetUsageMinValue(currentReadings.CPU.Id, "CPU");
+
+            vm.Memory.HighestUsage = await _readings.GetUsageMaxValue(currentReadings.Memory.Id, "Memory");
+            vm.Memory.LowestUsage = await _readings.GetUsageMinValue(currentReadings.Memory.Id, "Memory");
+
+            vm.Mobo.HighestTemp = await _readings.GetTempMaxValue(currentReadings.MB.Id, "Mobo");
+            vm.Mobo.LowestTemp = await _readings.GetTempMinValue(currentReadings.MB.Id, "Mobo");
 
             return Json(vm);
         }

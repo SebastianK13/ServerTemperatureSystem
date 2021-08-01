@@ -72,6 +72,10 @@ public class CPUViewModel
     public string Name { get; set; }
     public double CriticalTemp { get; set; }
     public int CurrentUsage { get; set; }
+    public double LowestTemp {get;set;}
+    public double HighestTemp {get;set;}
+    public int LowestUsage {get;set;}
+    public int HighestUsage {get;set;}
     public List<UsageDetailsViewModel> UsageReadings { get; set; }
     public List<TemperatureDetailsViewModel> TemperatureReadings { get; set; }
     public List<CoreViewModel> Cores { get; set; }
@@ -81,6 +85,8 @@ public class MemoryViewModel
     public string Name { get; set; }
     public int Total { get; set; }
     public int CurrentUsage { get; set; }
+    public int LowestUsage {get;set;}
+    public int HighestUsage {get;set;}
     public List<UsageDetailsViewModel> UsageReadings { get; set; }
 
 }
@@ -88,6 +94,8 @@ public class MotherboardViewModel
 {
     public string Name { get; set; }
     public double CriticalTemp { get; set; }
+    public double LowestTemp {get;set;}
+    public double HighestTemp {get;set;}
     public List<TemperatureDetailsViewModel> TemperatureReadings { get; set; }
 }
 public static class ModelConverter

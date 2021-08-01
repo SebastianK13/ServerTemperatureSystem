@@ -98,7 +98,7 @@ function drawCPUTempLine(x,y) {
 
 function drawMoboTempLine(x,y) {
     chartTCtx.beginPath();
-    chartTCtx.strokeStyle = "red";
+    chartTCtx.strokeStyle = "darkmagenta";
     chartTCtx.lineWidth = 2;
     chartTCtx.moveTo(lastX+34, chartTemp.height - (lastMemY+30));
     chartTCtx.lineTo(x+34, chartTemp.height - (y+30));

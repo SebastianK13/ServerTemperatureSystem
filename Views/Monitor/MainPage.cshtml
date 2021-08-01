@@ -40,12 +40,17 @@
                 </div>
             </div>
             <div id="cpuUsage" class="long-element">
-                <p class="container-header">CPU & cores usage</p>
+                <p class="container-header">CPU & Memory usage</p>
                 <div id="cuUsage" class="bottom-container">
                     <canvas id="coresCpuChartU"></canvas>
                 </div>
                 <div id="usageInfoSection" class="chartInfoSection">
-
+                    <div id="uInfoHeader" class="usageInfoSectionHeader">
+                        <canvas id="usageInfoHeader"></canvas>
+                    </div>
+                    <div id="uInfoBody" class="usageInfoSectionBody">
+                        <canvas id="usageInfo"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,7 +75,12 @@
                     <canvas id="moboCpuChartT"></canvas>
                 </div>
                 <div id="tempinfoSection" class="chartInfoSection">
-
+                    <div id="tInfoHeader" class="tempInfoSectionHeader">
+                        <canvas id="tempInfoHeader"></canvas>
+                    </div>
+                    <div id="tInfoBody" class="tempInfoSectionBody">
+                        <canvas id="tempInfo"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,4 +109,6 @@
     <script type="text/javascript" src="./Scripts/ChartsScript.js"></script>
     <script type="text/javascript" src="./Scripts/GridChartsUsageScript.js"></script>
     <script type="text/javascript" src="./Scripts/GridChartsTemperatureScript.js"></script>
+    <script type="text/javascript" src="./Scripts/ChartsSectionInfoUsage.js"></script>
+    <script type="text/javascript" src="./Scripts/ChartSectionInfoTemp.js"></script>
 </body>
