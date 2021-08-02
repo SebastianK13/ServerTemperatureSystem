@@ -5,6 +5,7 @@ using System.Linq;
 
 public class ComponentsViewModel
 {
+    public ComponentsViewModel(){}
     public ComponentsViewModel(Components components)
     {
         List<CoreViewModel> cores = new List<CoreViewModel>();

@@ -14402,6 +14402,11 @@
   "RootNamespace": "ServerTemperatureSystem",
   "Documents": [
     {
+      "FilePath": "/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/Views/Account/LoginPage.cshtml",
+      "TargetPath": "Views\\Account\\LoginPage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/Views/Shared/_MainLayout.cshtml",
       "TargetPath": "Views\\Shared\\_MainLayout.cshtml",
       "FileKind": "mvc"

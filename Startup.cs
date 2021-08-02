@@ -66,7 +66,7 @@ namespace ServerTemperatureSystem
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Monitor}/{action=MainPage}");
+                    pattern: "{controller=Account}/{action=LoginPage}");
             });
         }
     }

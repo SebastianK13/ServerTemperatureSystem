@@ -54,11 +54,12 @@ namespace ServerTemperatureSystem.Controllers
         }
         public async Task<IActionResult> MainPage()
         {
+            ComponentsViewModel components = new ComponentsViewModel();
             await IsComponentsInDb();
             var model = await _readings.GetReadings(TimeService.Last20Minutes());
-
-            ComponentsViewModel components = 
-                new ComponentsViewModel(model);
+            if(model != null)
+                components = 
+                    new ComponentsViewModel(model);
 
             return View(components);
         }
