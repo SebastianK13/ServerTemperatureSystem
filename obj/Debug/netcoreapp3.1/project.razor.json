@@ -14420,6 +14420,11 @@
       "FilePath": "/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/Views/Monitor/MainPage.cshtml",
       "TargetPath": "Views\\Monitor\\MainPage.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/Views/Shared/_UnloggedUserLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_UnloggedUserLayout.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

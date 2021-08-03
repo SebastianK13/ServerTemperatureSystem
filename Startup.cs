@@ -14,6 +14,8 @@ using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using Quartz;
 using ServerTemperatureSystem.Services.ComponentReadingsProvider;
+using ServerTemperatureSystem.Services;
+using Microsoft.AspNetCore.Identity;
 
 namespace ServerTemperatureSystem
 {
@@ -44,13 +46,19 @@ namespace ServerTemperatureSystem
                 q.WaitForJobsToComplete = true);
 
             var serverVersion = new MySqlServerVersion(new Version(8,0,25));
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            {
+                options.User.RequireUniqueEmail = false;
+            })
+            .AddEntityFrameworkStores<AppIdentityDbContext>()
+            .AddDefaultTokenProviders();
             services.AddControllersWithViews();
             services.AddDbContext<AppParamsDbContext>(options => 
-            {
-                options.UseMySql(Configuration["Data:Readings:ConnectionString"], serverVersion);
-                //options.UseLazyLoadingProxies(true);
-            });
+                options.UseMySql(Configuration["Data:Readings:ConnectionString"], serverVersion));
+            services.AddDbContext<AppIdentityDbContext>(options =>
+                options.UseMySql(Configuration["Data:Identity:ConnectionString"], serverVersion));
             services.AddTransient<IReadingsService, ReadingsDataService>();
+            services.AddTransient<IIdentityService, IdentityService>();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -61,12 +69,15 @@ namespace ServerTemperatureSystem
 
             app.UseRouting();
             app.UseStaticFiles();
+            app.UseAuthorization();
+            app.UseAuthentication();
+            app.UseHttpsRedirection();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Account}/{action=LoginPage}");
+                    pattern: "{controller=Monitor}/{action=MainPage}");
             });
         }
     }

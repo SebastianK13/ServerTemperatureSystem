@@ -16,6 +16,9 @@
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/K4os.Compression.LZ4.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/K4os.Compression.LZ4.Streams.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/K4os.Hash.xxHash.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.Language.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll
@@ -34,6 +37,8 @@
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
@@ -147,8 +152,10 @@
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.TagHelpers.input.cache
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.TagHelpers.output.cache
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.RazorCoreGenerate.cache
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/Razor/Views/Account/LoginPage.cshtml.g.cs
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/Razor/Views/Monitor/MainPage.cshtml.g.cs
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_MainLayout.cshtml.g.cs
+/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_UnloggedUserLayout.cshtml.g.cs
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.RazorTargetAssemblyInfo.cache
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.RazorTargetAssemblyInfo.cs
@@ -159,4 +166,3 @@
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.dll
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.pdb
 /home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/ServerTemperatureSystem.genruntimeconfig.cache
-/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/obj/Debug/netcoreapp3.1/Razor/Views/Account/LoginPage.cshtml.g.cs

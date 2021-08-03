@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ServerTemperatureSystem.Services;
 using ServerTemperatureSystem.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ServerTemperatureSystem.Controllers
 {
+    [Authorize]
     public class MonitorController : Controller
     {
         private readonly IReadingsService _readings;

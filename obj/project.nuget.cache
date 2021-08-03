@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UpRaTgG6UkxutVlb6M4FlES92G+tNdJgA5pH0rOoPVKK3BJslqLujEG19GFTf8lVQsznWj3rhtG0v9bsGrYKHg==",
+  "dgSpecHash": "s4KsFBQkhdQVdCgS61D2bJYuxvtmAbjsApn37opuEUtjaWnUI/mHropYbKPGjkt0f/YBYact8oMUavS4uf8qFw==",
   "success": true,
   "projectFilePath": "/home/dead_space/Downloads/ServerTemp/ServerTemperatureSystem/ServerTemperatureSystem/ServerTemperatureSystem.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,10 @@
     "/home/dead_space/.nuget/packages/k4os.compression.lz4/1.1.11/k4os.compression.lz4.1.1.11.nupkg.sha512",
     "/home/dead_space/.nuget/packages/k4os.compression.lz4.streams/1.1.11/k4os.compression.lz4.streams.1.1.11.nupkg.sha512",
     "/home/dead_space/.nuget/packages/k4os.hash.xxhash/1.0.6/k4os.hash.xxhash.1.0.6.nupkg.sha512",
+    "/home/dead_space/.nuget/packages/microsoft.aspnetcore.cryptography.internal/5.0.7/microsoft.aspnetcore.cryptography.internal.5.0.7.nupkg.sha512",
+    "/home/dead_space/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/5.0.7/microsoft.aspnetcore.cryptography.keyderivation.5.0.7.nupkg.sha512",
     "/home/dead_space/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "/home/dead_space/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/5.0.7/microsoft.aspnetcore.identity.entityframeworkcore.5.0.7.nupkg.sha512",
     "/home/dead_space/.nuget/packages/microsoft.aspnetcore.razor/2.2.0/microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "/home/dead_space/.nuget/packages/microsoft.aspnetcore.razor.language/3.1.0-preview1.19508.6/microsoft.aspnetcore.razor.language.3.1.0-preview1.19508.6.nupkg.sha512",
     "/home/dead_space/.nuget/packages/microsoft.aspnetcore.razor.runtime/2.2.0/microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
@@ -38,6 +41,8 @@
     "/home/dead_space/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "/home/dead_space/.nuget/packages/microsoft.extensions.fileproviders.abstractions/2.1.1/microsoft.extensions.fileproviders.abstractions.2.1.1.nupkg.sha512",
     "/home/dead_space/.nuget/packages/microsoft.extensions.hosting.abstractions/2.1.1/microsoft.extensions.hosting.abstractions.2.1.1.nupkg.sha512",
+    "/home/dead_space/.nuget/packages/microsoft.extensions.identity.core/5.0.7/microsoft.extensions.identity.core.5.0.7.nupkg.sha512",
+    "/home/dead_space/.nuget/packages/microsoft.extensions.identity.stores/5.0.7/microsoft.extensions.identity.stores.5.0.7.nupkg.sha512",
     "/home/dead_space/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "/home/dead_space/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "/home/dead_space/.nuget/packages/microsoft.extensions.logging.debug/3.1.0-preview1.19506.1/microsoft.extensions.logging.debug.3.1.0-preview1.19506.1.nupkg.sha512",

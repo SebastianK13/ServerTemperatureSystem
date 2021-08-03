@@ -1,17 +1,21 @@
+@model LoginModel
 @{
-    Layout = "_MainLayout";
+    Layout = "_UnloggedUserLayout";
 }
 
 <body>
     <div class="loginPanel">
         <div class="loginPanelHeader">
             <img src="./Images/key-chain.png"/>
-            <div class="lPHText">Server monitor dashboard</div>
+            <div class="lPHText">SMD Admin Panel</div>
         </div>
         <div class="loginPanelBody">
-            <input placeholder="Username" autocomplete="off" id="login"/>
-            <input placeholder="Password" autocomplete="off" id="password" type="password"/>
-            <button type="button" class="loginBtn" text="Login">Login</button>
+            <form asp-action="LoginPage" asp-controller="Account" method="POST">
+                <input asp-for="Login" placeholder="Username" autocomplete="off" id="login" />
+                <input asp-for="Password" placeholder="Password" autocomplete="off" id="password" type="password" />
+                <button type="submit" class="loginBtn" text="Login">Login</button>
+            </form>
         </div>
+        <div asp-validation-summary="All"></div>
     </div>
 </body>

@@ -29,13 +29,13 @@ function generateMinMaxUValue(){
     signMinMaxUsageValues(viewmodel.memory.highestUsage+"%", "teal", 345, 115);
     signMinMaxUsageValues("(Values for last 24 hours)", "gray", 395, 115);
 
-    signMinMaxUsageValuesT("Min. temp: ", "green", 50, 115);
-    signMinMaxUsageValuesT(viewmodel.cpu.lowestTemp+"°C", "blue", 130, 115);
-    signMinMaxUsageValuesT(viewmodel.mobo.lowestTemp+"°C", "darkmagenta", 170, 115);
-    signMinMaxUsageValuesT("Max. temp: ", "red", 230, 115);
-    signMinMaxUsageValuesT(viewmodel.cpu.highestTemp+"°C", "blue", 305, 115);
-    signMinMaxUsageValuesT(viewmodel.mobo.highestTemp+"°C", "darkmagenta", 345, 115);
-    signMinMaxUsageValuesT("(Values for last 24 hours)", "gray", 395, 115);
+    signMinMaxUsageValues("Min. temp: ", "green", 50, 115);
+    signMinMaxUsageValues(viewmodel.cpu.lowestTemp+"°C", "blue", 130, 115);
+    signMinMaxUsageValues(viewmodel.mobo.lowestTemp+"°C", "darkmagenta", 170, 115);
+    signMinMaxUsageValues("Max. temp: ", "red", 230, 115);
+    signMinMaxUsageValues(viewmodel.cpu.highestTemp+"°C", "blue", 305, 115);
+    signMinMaxUsageValues(viewmodel.mobo.highestTemp+"°C", "darkmagenta", 345, 115);
+    signMinMaxUsageValues("(Values for last 24 hours)", "gray", 395, 115);
 }
 
 function drawHorizontalLanesForUC(){
