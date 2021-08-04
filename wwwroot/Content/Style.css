@@ -6,7 +6,7 @@ body{
     background-color: rgb(50, 50, 50);
 }
 .Container{
-    height: calc(100% - 190px);
+    height: calc(100% - 232px);
     width: calc(100% - 80px);
     position: relative;
     padding: 40px;
@@ -286,4 +286,35 @@ min-height: 755px;
     height: 30px;
     font-size: 18px;
     font-weight: 600;
+    margin: auto;
+}
+.header-menu{
+    position: relative;
+    width: calc(100% - 80px);
+    height: 40px;
+    background-color: rgba(0,0,0,.5);
+    border-bottom: 2px solid rgba(66,66,244, .5);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.header-menu a{
+    line-height: 40px;
+    text-decoration: none;
+    color: white;
+    float: right;
+}
+.header-menu a:hover{
+    color: rgba(66,66,244, 1);
+}
+.logoutBtn{
+    width: 90px;
+    height: 40px;
+    float: right;
+}
+.header-menu img{
+    height: 25px;
+    opacity: .8;
+    width: 21px;
+    position: absolute;
+    margin-top: 4px;
 }

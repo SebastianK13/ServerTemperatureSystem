@@ -50,9 +50,19 @@ namespace ServerTemperatureSystem
             {
                 options.User.RequireUniqueEmail = false;
             })
+
             .AddEntityFrameworkStores<AppIdentityDbContext>()
             .AddDefaultTokenProviders();
-            services.AddControllersWithViews();
+            services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest)
+                .AddRazorPagesOptions(options => {
+                    options.Conventions.AuthorizeAreaFolder("Identity", "/Account");
+                    options.Conventions.AuthorizeAreaPage("Identity", "/Account/Logout");
+                });
+            services.ConfigureApplicationCookie(options =>
+                {
+                    options.LoginPath = $"/Account/LoginPage";
+                    options.LogoutPath = $"/Account/Logout";
+                });
             services.AddDbContext<AppParamsDbContext>(options => 
                 options.UseMySql(Configuration["Data:Readings:ConnectionString"], serverVersion));
             services.AddDbContext<AppIdentityDbContext>(options =>
@@ -69,8 +79,8 @@ namespace ServerTemperatureSystem
 
             app.UseRouting();
             app.UseStaticFiles();
-            app.UseAuthorization();
             app.UseAuthentication();
+            app.UseAuthorization();
             app.UseHttpsRedirection();
 
             app.UseEndpoints(endpoints =>

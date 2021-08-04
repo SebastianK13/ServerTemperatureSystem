@@ -15,14 +15,11 @@ namespace ServerTemperatureSystem.Controllers
         public Account(IIdentityService identity) =>
             _identity = identity;
         [AllowAnonymous]
-        public async Task<IActionResult> LoginPage(string returnUrl = "/Monitor/MainPage")
+        public IActionResult LoginPage()
         {
-/*             LoginModel model = new LoginModel
-            {
-                Login = "SDMAdmin",
-                Password = "Jesiotra156^!"
-            };
-            bool result = await _identity.SignUpAsync(model); */
+            if(User.Identity.IsAuthenticated)
+                return Redirect("/Monitor/MainPage");
+
             return View();
         }
 
@@ -45,9 +42,6 @@ namespace ServerTemperatureSystem.Controllers
             await _identity.LogoutAsync();
             return Redirect("/Account/LoginPage");
         }
-        [AllowAnonymous]
-        public RedirectResult Login() =>
-            Redirect("/Account/LoginPage");
     }
 
 }

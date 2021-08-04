@@ -1,16 +1,6 @@
 const chartTemp = document.getElementById("moboCpuChartT");
 const chartTCtx = chartTemp.getContext("2d");
 const areaT = document.getElementById("mbcTemp");
-/* var cpuUX = 0;
-var cpuUY = 0;
-var gridLineHeight = 0;
-var gridWidth = 0;
-var timeRange = [];
-var lastX = 0 ;
-var lastCpuY = 0;
-var lastMemY = 0;
-var previousReadings;
-var lastY = 0; */
 
 generateCurveT();
 

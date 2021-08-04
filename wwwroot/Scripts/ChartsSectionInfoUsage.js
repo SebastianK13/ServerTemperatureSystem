@@ -28,14 +28,6 @@ function generateMinMaxUValue(){
     signMinMaxUsageValues(viewmodel.cpu.highestUsage+"%", "blue", 305, 115);
     signMinMaxUsageValues(viewmodel.memory.highestUsage+"%", "teal", 345, 115);
     signMinMaxUsageValues("(Values for last 24 hours)", "gray", 395, 115);
-
-    signMinMaxUsageValues("Min. temp: ", "green", 50, 115);
-    signMinMaxUsageValues(viewmodel.cpu.lowestTemp+"°C", "blue", 130, 115);
-    signMinMaxUsageValues(viewmodel.mobo.lowestTemp+"°C", "darkmagenta", 170, 115);
-    signMinMaxUsageValues("Max. temp: ", "red", 230, 115);
-    signMinMaxUsageValues(viewmodel.cpu.highestTemp+"°C", "blue", 305, 115);
-    signMinMaxUsageValues(viewmodel.mobo.highestTemp+"°C", "darkmagenta", 345, 115);
-    signMinMaxUsageValues("(Values for last 24 hours)", "gray", 395, 115);
 }
 
 function drawHorizontalLanesForUC(){
